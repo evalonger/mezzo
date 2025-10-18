@@ -1,0 +1,1106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header with login/register */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-button {
+    padding: 8px 15px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #1976D2;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    font-size: 24px;
+}
+
+.logout-button {
+    padding: 8px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Üçlü bölüm düzeni */
+.main-layout {
+    display: flex;
+    height: calc(100vh - 150px);
+    gap: 20px;
+}
+
+.left-panel {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-right: 2px solid #eee;
+    overflow-y: auto;
+}
+
+.center-left-panel {
+    flex: 1.5;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.center-right-panel {
+    flex: 0.5;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.right-panel {
+    flex: 0.5;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 2px solid #eee;
+    overflow-y: auto;
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Sol panel stilleri */
+.action-button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.action-button:hover {
+    background-color: #1976D2;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.category-list li:hover {
+    background-color: #f5f5f5;
+}
+
+.auction-info {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.auction-info h3 {
+    margin-top: 0;
+    color: #1976D2;
+    text-align: center;
+    position: relative;
+}
+
+.auction-info-description {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.info-value {
+    color: #1976D2;
+    font-weight: bold;
+}
+
+#dailyLimitInfo {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.info-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    cursor: help;
+}
+
+.upcoming-auctions {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.upcoming-auctions h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.upcoming-auctions-description {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.info-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    cursor: help;
+}
+
+.daily-limit-info {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.limit-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.limit-label {
+    font-weight: bold;
+}
+
+.limit-value {
+    color: #1976D2;
+    font-weight: bold;
+}
+
+.warning-message {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffcc80;
+}
+
+.warning-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.warning-icon {
+    font-size: 24px;
+}
+
+.warning-text {
+    font-weight: bold;
+    color: #f57c00;
+}
+
+.warning-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ffe0b2;
+}
+
+.warning-details p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.upcoming-auctions h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.info-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    cursor: help;
+}
+
+.auction-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.auction-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.auction-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.auction-date {
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.auction-product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auction-product-count {
+    background-color: #2196F3;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.auction-card-body {
+    margin-bottom: 15px;
+}
+
+.auction-description {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.user-product-info {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.user-product-count {
+    font-weight: bold;
+    color: #388E3C;
+}
+
+.auction-limits {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.auction-limit-info {
+    font-weight: bold;
+    color: #333;
+}
+
+.auction-card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-button-small {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.action-button-small:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.add-product-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.remove-product-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.remove-product-btn:hover {
+    background-color: #d32f2f;
+}
+
+.remove-product-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.add-product-btn:hover {
+    background-color: #45a049;
+}
+
+.remove-product-btn:hover {
+    background-color: #d32f2f;
+}
+
+.add-product-btn:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+/* Sağ panel stilleri */
+.active-item-info {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.item-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.item-details {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+}
+
+.detail-value {
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.user-stats {
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.stat-label {
+    font-weight: bold;
+}
+
+.stat-value {
+    color: #2196F3;
+}
+
+.top-bidders-section {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.top-bidders-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.top-bidders-list {
+    margin-top: 10px;
+}
+
+.top-bidder-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.top-bidder-name {
+    font-weight: bold;
+}
+
+.top-bidder-count {
+    color: #2196F3;
+}
+
+.rankings {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.rankings h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.ranking-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ranking-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+
+.ranking-value {
+    font-weight: bold;
+    color: #2196F3;
+    margin-top: 5px;
+}
+
+/* Orta panel içerik stilleri */
+.auction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.item-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+.bids-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.bid-form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.bids-list {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.bid-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.bid-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bid-button:hover {
+    background-color: #45a049;
+}
+
+.bid-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.highest-bid {
+    background-color: #e8f5e9;
+    font-weight: bold;
+}
+
+.sold-message {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sold-message[style*="color: red"] {
+    color: #f44336 !important;
+}
+
+/* Ürün ekleme formu */
+.product-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+}
+
+.image-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.product-form-inline {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+}
+
+.product-form-inline .form-group {
+    margin-bottom: 10px;
+}
+
+.product-form-inline .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.product-form-inline .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.product-form-inline .file-input {
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.product-form-inline .image-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-form-inline .image-preview img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 5px;
+}
+
+.product-form-inline .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product-form-inline .form-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.product-form-inline .submit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.product-form-inline .cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.product-form-inline .submit-button:hover {
+    background-color: #45a049;
+}
+
+.product-form-inline .cancel-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Mezat sırası */
+.auction-queue {
+    width: 100%;
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.queue-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.queue-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.queue-item.active {
+    background-color: #e8f5e9;
+    font-weight: bold;
+}
+
+/* Auth Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close-button {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.auth-form-group {
+    margin-bottom: 15px;
+}
+
+.auth-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.auth-form-button:hover {
+    background-color: #1976D2;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 15px;
+    color: #2196F3;
+    cursor: pointer;
+}
+
+.auction-product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-products-btn {
+    padding: 2px 8px;
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.view-products-btn:hover {
+    background-color: #1565C0;
+}
+
+.products-modal-content {
+    max-width: 800px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.products-modal-content .modal-body {
+    padding: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-name {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-description {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.product-price {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.product-seller {
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.remove-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f;
+}
+
+.time-warning {
+    background-color: #fff8e1;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ffecb3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-warning .warning-icon {
+    font-size: 18px;
+}
+
+.time-warning .warning-text {
+    font-weight: bold;
+    color: #ff8f00;
+    font-size: 14px;
+}
+
+.product-limit-warning {
+    background-color: #ffebee;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ffcdd2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-limit-warning .warning-icon {
+    font-size: 18px;
+}
+
+.product-limit-warning .warning-text {
+    font-weight: bold;
+    color: #c62828;
+    font-size: 14px;
+}
+
+.user-product-info {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.user-product-count {
+    font-weight: bold;
+    color: #388E3C;
+}
+
+.no-auctions-message {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.no-auctions-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.no-auctions-icon {
+    font-size: 32px;
+}
+
+.no-auctions-text {
+    font-weight: bold;
+    color: #1976D2;
+    font-size: 16px;
+}
+
+.upcoming-auctions h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
